@@ -1,0 +1,60 @@
+.TodoItem,
+.TodoItem-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.dark .TodoItem i {
+  color: #5a5b79;
+}
+
+.TodoItem {
+  padding: 10px 15px;
+  border-bottom: 1px solid lightgray;
+}
+
+.dark .TodoItem {
+  border-bottom: 1px solid #2a2c41;
+}
+
+.TodoItem input {
+  flex-grow: 1;
+  padding: 10px;
+  margin: 0 10px;
+  border: none;
+}
+
+.TodoItem input:disabled {
+  background-color: inherit;
+  color: inherit;
+  font-weight: 600;
+}
+
+.TodoItem-edit {
+  margin-right: 10px;
+}
+
+.Circle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.Circle img {
+  display: none;
+  width: 10px;
+}
+
+.Circle.Checked {
+  background-image: linear-gradient(
+    190deg,
+    hsl(192, 100%, 67%),
+    hsl(280, 87%, 65%)
+  );
+}
+
+.Circle.Checked img {
+  display: block;
+}

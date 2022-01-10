@@ -1,0 +1,70 @@
+.TodoList {
+  max-width: 550px;
+  margin: 0 auto;
+  margin-top: -14rem;
+}
+
+.TodoList-wrapper {
+  margin-bottom: 30px;
+  box-shadow: 0px 0px 3px 0px rgba(63, 63, 63, 0.555);
+  border-radius: 5px;
+  background-color: #fff;
+  transition: all ease-in-out 0.4s;
+}
+
+.dark .TodoList-wrapper {
+  background-color: #181824;
+}
+
+.TodoList-Counter,
+.TodoList-Counter .Options {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.TodoList-Counter {
+  padding: 15px;
+  font-size: 15px;
+  transition: all 0.4s ease-in-out;
+}
+
+.dark .TodoList-Counter {
+  color: #5a5b79;
+}
+
+.TodoList-Counter .Options div {
+  margin-right: 10px;
+}
+
+footer {
+  font-size: 15px;
+  color: lightgray;
+  margin-bottom: 50px;
+}
+
+.dark footer {
+  color: #5a5b79a8;
+}
+
+.link {
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.link:hover {
+  color: #8099f6;
+}
+
+.link.active {
+  color: #8099f6;
+  text-decoration: underline;
+}
+
+@media screen and (max-width: 550px) {
+  .TodoList {
+    margin-right: 15px;
+    margin-left: 15px;
+  }
+}
