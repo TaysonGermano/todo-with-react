@@ -11,7 +11,38 @@ export default function TodoList() {
   const storage = window.localStorage;
   const data =
     storage.getItem("data") === null
-      ? storage.setItem("data", JSON.stringify(todos))
+      ? storage.setItem("data", JSON.stringify([
+  {
+    "name": "Clear Greg's invoice",
+    "id": "ef006959-38b7-4635-aba6-ae726b87aa91",
+    "status": true,
+    "edit": false
+  },
+  {
+    "name": "Send a reminder to Greg",
+    "id": "b40d21c6-b824-4f0d-8f69-9917ca5734cc",
+    "status": false,
+    "edit": false
+  },
+  {
+    "name": "Set up Alice meeting",
+    "id": "ebddada7-bc65-45a9-a276-d44294f68d3d",
+    "status": true,
+    "edit": false
+  },
+  {
+    "name": "Go to Nike store",
+    "id": "2f22a28a-a7b2-46e0-a8b1-1326acc1c922",
+    "status": false,
+    "edit": false
+  },
+  {
+    "name": "Call Mom",
+    "id": "e7919d14-82f2-4c01-8dda-52d73c97d9d8",
+    "status": true,
+    "edit": false
+  }
+]))
       : storage.getItem("data");
 
   const [fixedTd, setFixedTd] = useState(JSON.parse(data));
