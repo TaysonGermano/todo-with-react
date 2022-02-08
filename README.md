@@ -54,4 +54,4 @@ I'm always trying to get my css skills up to date and also learn some new tricks
 
 ## Author
 
-- Website - Tyson Monteiro
+- Tyson Monteiro
